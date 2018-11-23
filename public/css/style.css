@@ -1,0 +1,64 @@
+body {
+    color: burlywood;
+
+}
+
+section {
+
+}
+
+header {
+    background-color: red;
+}
+
+.navbar {
+    background-color: #faf8ef;
+    padding-right: 10px;
+
+}
+
+.navbar-nav {
+
+    color: black;
+}
+.image {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+
+
+}
+@media only screen and (min-width: 1200px) {
+    .image {
+        position: relative;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+}
+.demotable {
+    border-collapse: collapse;
+
+}
+.demotable tbody tr:nth-child(n+2) {
+
+}
+.demotable td,
+.demotable tbody tr:before {
+    padding: .1em .5em;
+    border: 1px solid #E7D5C0;
+}
+.demotable  tr:before {
+    display: table-cell;
+    vertical-align: middle;
+}
+.demotable tbody tr:before,
+.demotable b:after {
+    /*content: counter(schetchik);*/
+    color: #978777;
+}
+
+thead {
+
+    color: #978777;
+
+}
