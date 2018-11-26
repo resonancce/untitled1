@@ -25,8 +25,6 @@ const upload = multer({
 
 mongoose.connect("mongodb://localhost:27017/usersdb");
 app.set('port', config.get('port'));
-
-
 app.engine('ejs', require('ejs-locals'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -49,9 +47,7 @@ app.use(session({
     saveUninitialized: true
 
 }));
-/*app.use(require('middleware/loadUser'));*/
 app.use(router);
-
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
